@@ -1,0 +1,65 @@
+let catalogoElementos = [
+    {
+      id: "jfhgbvnscs",
+      name: "Te amarillo",
+      price: 11.95,
+      desc: "Infusión dulce que cautiva por su mágico color inspirado en la Primavera",
+      img: "imgs/te-amarillo-sun.JPG",
+    },
+    {
+      id: "ioytrhndcv",
+      name: "Te Ayurveda",
+      price: 12.20,
+      desc: "Descubre la armonía interior con cada sorbo de nuestro té Ayurveda, creado para revitalizarte",
+      img: "imgs/te-ayurveda.JPG",
+    },
+    {
+      id: "wuefbncxbsn",
+      name: "Te Blanco Nieve",
+      price: 25,
+      desc: "La frescura y la suavidad se unen en una taza de nuestro té Blanco Nieve, para momentos de relajación",
+      img: "imgs/te-blanco-nieve.JPG",
+    },
+    {
+      id: "thyfhcbcv",
+      name: "Te Matcha Latte",
+      price: 13.14,
+      desc: "Descubre un equilibrio perfecto entre lo indulgente y lo saludable con nuestro Matcha Latte",
+      img: "imgs/te-matcha-latte.JPG",
+    },
+    {
+      id: "thiecbawdjksadjk",
+      name: "Te Negro Canela",
+      price: 25,
+      desc: "Una danza de sabores intensos: el té Negro Canela es el toque perfecto para tus momentos acogedores",
+      img: "imgs/te-negro-canela.JPG",
+    },
+    {
+      id: "iuertrywebncdjksadjk",
+      name: "Te Oolong",
+      price: 13.95,
+      desc: "Los matices cambiantes de nuestro Oolong te llevarán en un viaje de descubrimiento en cada taza",
+      img: "imgs/te-oonlong-azul.JPG",
+    },
+    {
+      id: "thierytbvcbvzdhadjk",
+      name: "Te Rojo Vainilla",
+      price: 14.50,
+      desc: "Descubre la magia de la vainilla en un contexto completamente nuevo con nuestro té Rojo Vainilla",
+      img: "imgs/te-rojo-vainilla.JPG",
+    },
+    {
+      id: "trfoiwfcnbcawdjksadjk",
+      name: "Te Turron Navideño",
+      price: 45,
+      desc: "Los recuerdos de la Navidad cobran vida en nuestro Rurron Navidad, una experiencia inolvidable",
+      img: "imgs/te-turron-navidad.JPG",
+    },
+    {
+      id: "oiopijmjkhuihb",
+      name: "Verde Yogureta",
+      price: 12.20,
+      desc: "Un abrazo refrescante para tu paladar: el té Verde Yogureta es la opción ideal para los días cálidos",
+      img: "imgs/te-verde-yogureta.JPG",
+    }
+  ];

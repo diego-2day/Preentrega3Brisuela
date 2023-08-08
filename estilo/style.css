@@ -1,86 +1,166 @@
+/*Estilo default del navegador*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
-  }
+  font-family: monospace;
+}
+/*Cambiamos iconos importados*/
+i {
+  cursor: pointer;
+}
 
-  /*Estilo de la barra de navegacion*/
+a {
+  text-decoration: none;
+  color: white;
+}
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: tan;
-    color: whitesmoke;
-    padding: 25px 60px;
+/** Estilos del navbar **/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:darkred;
+  color: antiquewhite;
+  padding: 25px 60px;
+  margin-bottom: 30px;
 }
 
 .carrito {
-    position: relative;
-    background-color: #fff;
-    color: #212529;
-    font-size: 30px;
-    padding: 5px;
-    border-radius: 4px;
-  }
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
 
-.productosAcomprar {
-    position: absolute;
-    top: -15px;
-    right: -10px;
-    font-size: 16px;
-    background-color: red;
-    color: white;
-    padding: 3px;
-    border-radius: 3px;
-  }
+#productosAcomprar {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
 
-  /*Info del carrito*/
+/** Ubicamos los items de compra **/
 
 .shop {
-    display: grid;
-    grid-template-columns: repeat(4, 223px);
-    gap: 30px;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
 .item {
-    border: 4px solid bisque;
-    border-radius: 4px;
-  }
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.item img {
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+}
 
 .detalles {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
-  }
-  
-.contador {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
 }
 
-.buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    font-size: 16px;
+.descripcion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-  
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
 .bi-dash-lg {
-    color: red;
+  color: red;
 }
-  
+
 .bi-plus-lg {
-    color: green;
-  }
-  
+  color: green;
+}
+
+/* Carrito de compras y los botones*/
+
+.texto-centrado {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.indexBtn,
+.checkout,
+.remueveTodo {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout {
+  background-color: green;
+}
+.remueveTodo {
+  background-color: red;
+}
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+/* Carrito de compras general*/
+
+.carritoDecompras {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Items del carro */
+
+.carritoItem {
+  border: 2px solid #212529;
+  border-radius: 5px;
+  display: flex;
+}
+
+.titulo-precio-x {
+  width: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulo-precio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carrito-item-precio {
+  background-color: #212529;
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+}

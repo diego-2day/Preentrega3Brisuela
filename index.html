@@ -10,11 +10,15 @@
 </head>
 <body>
     <nav class="navbar">
-        <h2>Te store</h2>
-        <div class="carrito">
-            <i class="bi bi-bag-check-fill"></i>
-            <div class="productosAcomprar">0</div>
-        </div>
+        <a href="index.html">
+            <h2>Te store</h2>
+        </a>
+        <a href="pages/carrito.html">
+            <div class="carrito">
+                <i class="bi bi-bag-check-fill"></i>
+                <div id="productosAcomprar">0</div>
+            </div>
+        </a>
     </nav>
     <main class="shop" id="shop">
         <section class="item">
@@ -22,11 +26,11 @@
             <span class="detalles">
                 <h3>Casual Shirt</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="contador">
+                <div class="descripcion">
                     <h2>$ 45</h2>
-                    <div class="buttons">
+                    <div class="botones">
                         <i class="bi bi-dash-lg"></i>
-                        <div class="quantity">0</div>
+                        <div class="cantidad">0</div>
                         <i class="bi bi-plus-lg"></i>
                     </div>
                 </div>
@@ -36,6 +40,8 @@
         <section class="item"></section>
         <section class="item"></section>
     </main>
+    <script src="./js/datos.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 </html>
