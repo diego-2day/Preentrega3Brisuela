@@ -48,6 +48,7 @@ generarCatalogo();
  Luego pasamos id como parametro de ambas funciones */
 
 let incremento = (id) => {
+
   let elementoSeleccinado = id;
   // [6] Creamos una funcion para buscar en la canasta el objeto clickeado 
   let busqueda = canasta.find((x) => x.id === elementoSeleccinado.id);
@@ -67,6 +68,16 @@ let incremento = (id) => {
   actualizar(elementoSeleccinado.id); //-> ***
   //[10] Guardamos en el storage en valores key:par "data" => "{obj incrementado actualizado}"
   localStorage.setItem("data", JSON.stringify(canasta));
+  /*Desplegamos mensaje*/ 
+  Swal.fire({
+    title: 'Agregado!',
+    icon:'success',
+    text: 'Tu producto fue agregado al carrito',
+    timer: 2000,
+    width: 600,
+    padding: '3em',
+    color: 'antiquewhite',
+    background: 'darkred', })
 };
 
 /* Creamos la funcion decremento para reducir el numero seleccionado - 1*/
@@ -88,6 +99,16 @@ let decremento = (id) => {
   console.log(canasta);
   //[10] Guardamos en el storage en valores key:par "data" => "{obj decrementado actualizado}"
   localStorage.setItem("data", JSON.stringify(canasta));
+  //Agregamos mensaje
+  Swal.fire({
+    title: 'Removido!',
+    icon:'error',
+    text: 'Se ve que no te ha gustado este producto!',
+    timer: 2000,
+    width: 600,
+    padding: '3em',
+    color: 'antiquewhite',
+    background: 'darkred', })
 };
 
 // [7] -> *** La funcon actualizar es ejecutada CUANDO se hace click en los botones, actualizando los digitos

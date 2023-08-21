@@ -1,6 +1,7 @@
 let carritoDecompras = document.getElementById("carritoDecompras");//Tomamos el carrito de compras por id
 let label = document.getElementById("label"); // Tomamos la etiqueta del carrito
 
+
 /* Consultamos por data en el storage */
 
 let canasta = JSON.parse(localStorage.getItem("data")) || [];
